@@ -3,6 +3,7 @@ import { StyleSheet, Image, Platform } from "react-native";
 import ParallaxScrollView from "@/components/ParallaxScrollView";
 import { ThemedText } from "@/components/ThemedText";
 import { ThemedView } from "@/components/ThemedView";
+import { Link } from "expo-router";
 
 export default function AboutScreen() {
   return (
@@ -18,6 +19,9 @@ export default function AboutScreen() {
       <ThemedText>
         This app includes example code to help you get started.
       </ThemedText>
+      <Link href="/" style={styles.link}>
+        <ThemedText type="link">Go to home screen!</ThemedText>
+      </Link>
     </ParallaxScrollView>
   );
 }
@@ -32,5 +36,9 @@ const styles = StyleSheet.create({
   titleContainer: {
     flexDirection: "row",
     gap: 8,
+  },
+  link: {
+    marginTop: 15,
+    paddingVertical: 15,
   },
 });
