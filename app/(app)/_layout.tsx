@@ -13,10 +13,10 @@ export default function AppLayout() {
     }
   }, [loaded]);
 
-  //   React.useEffect(() => {
-  //     if (!loaded) return;
-  //     router.push("/about");
-  //   }, [loaded]);
+  React.useEffect(() => {
+    if (!loaded) return;
+    router.push("/about");
+  }, [loaded]);
 
   // It is OK to defer rendering this nested layout's content. We couldn't
   // defer rendering the root layout's content since a navigation event (the
