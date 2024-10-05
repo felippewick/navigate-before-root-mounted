@@ -4,7 +4,7 @@ import { useFonts } from "expo-font";
 import { Text } from "react-native";
 export default function AppLayout() {
   const [loaded] = useFonts({
-    // SpaceMono: require("../../assets/fonts/SpaceMono-Regular.ttf"),
+    SpaceMono: require("../../assets/fonts/SpaceMono-Regular.ttf"),
   });
 
   React.useEffect(() => {
